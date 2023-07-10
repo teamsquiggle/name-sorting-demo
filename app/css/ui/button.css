@@ -1,0 +1,43 @@
+/* Import Main */
+@import url('../main.css');
+
+button {
+    /* Appearance */
+    height: 36px;
+    padding: 9px 24px;
+    border-radius: 18px;
+    outline: none;
+    border: none;
+
+    /* Typography */
+    font-weight: 500;
+
+    /* Interaction */
+    cursor: pointer;
+    transition: opacity 400ms ease-in-out;
+}
+
+button:hover {
+    opacity: 0.6;
+}
+
+button * {
+    font-size: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+}
+
+button.primary {
+    background: var(--banana);
+}
+
+button.secondary {
+    background: var(--mono-300);
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}

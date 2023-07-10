@@ -1,0 +1,16 @@
+/* Import Main */
+@import url('../main.css');
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header {
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 18px;
+    gap: 18px;
+}

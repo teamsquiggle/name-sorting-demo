@@ -1,0 +1,23 @@
+/* Import Main */
+@import url('../main.css');
+
+/* Text fields */
+input.text {
+    /* Appearance */
+    height: 36px;
+    padding: 0 24px 0 16px;
+    border-radius: 18px;
+    border: 1px solid var(--mono-200);
+    outline: none;
+
+    /* Typography */
+    font-size: 14px;
+    font-weight: 400;
+
+    /* Interaction */
+    transition: border-color 400ms ease-in-out;
+}
+
+input.text::placeholder {
+    color: var(--mono-300);
+}
