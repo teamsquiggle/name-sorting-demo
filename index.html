@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>Squiggle | Messaging made easy</title>
+		<title>Squiggle | Name Sorting Demo</title>
 		<link rel="shortcut icon" type="image/png" href="identity/logomark/yellow.png">
 
 		<!-- Meta: General -->
@@ -9,9 +9,24 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Meta: Site Embed -->
-		<meta name="theme-color" content="#FFCC00">
+		<meta name="theme-color" content="#00BDFF">
 
-		<meta name="title" content="Squiggle | Messaging made easy">
+		<meta name="title" content="Squiggle | Name Sorting Demo 📛">
+		<meta name="description" content="Here's a demo of how names across Squiggle in group chats, typing indicators, and more will be sorted & displayed.">
+		
+		<meta property="og:type" content="website">
+		<meta property="og:site_name" content="Squiggle Demos">
+		<meta property="og:title" content="📛 Name Sorting">
+		<meta property="og:description" content="Here's a demo of how names across Squiggle in group chats, typing indicators, and more will be sorted & displayed.">
+		<meta property="og:image" content="identity/embed/demos/name-sorting.png">
+		
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:site_name" content="Squiggle Demos">
+		<meta property="twitter:title" content="📛 Name Sorting">
+		<meta property="twitter:description" content="Here's a demo of how names across Squiggle in group chats, typing indicators, and more will be sorted & displayed.">
+		<meta property="twitter:image" content="identity/embed/demos/name-sorting.png">
+
+		<!-- meta name="title" content="Squiggle | Messaging made easy">
 		<meta name="description" content="Tired of paywalls and unnecessary limitations when just trying to connect with your friends and family? Try Squiggle, and say goodbye to the stress of messaging.">
 		
 		<meta property="og:type" content="website">
@@ -24,20 +39,23 @@
 		<meta property="twitter:site_name" content="Squiggle">
 		<meta property="twitter:title" content="Say goodbye to the stress of messaging. 👋">
 		<meta property="twitter:description" content="Tired of paywalls and unnecessary limitations when just trying to connect with your friends and family? Try Squiggle for free today.">
-		<meta property="twitter:image" content="">
+		<meta property="twitter:image" content="" -->
 
 		<!-- CSS & Styling -->
 		<link rel="stylesheet" type="text/css" href="app/css/main.css">
 	</head>
-	<body>
+	<body class="light-theme">
 		<div class="header">
 			<img src="identity/logomark/yellow.png" alt="Squiggle" width="50">
-			<h1 id="header">User Selecting Demo</h1>
+			<h1 id="header">Name Sorting Demo</h1>
+			<p>Click on a name to remove it.</p>
 			<div class="buttons">
 				<input type="text" class="text" id="input-name" placeholder="Enter a name">
-				<button class="primary" id="add-name">Add</button>
+				<button class="primary" id="add-name" disabled>Add</button>
+				<button class="secondary" id="clear-all" disabled>Clear all</button>
 			</div>
 		</div>
-		<script type="text/javascript" src="app/js/userSelect.js"></script>
+		<div class="name-container" id="names"></div>
+		<script type="text/javascript" src="app/js/nameSort.js"></script>
 	</body>
 </html>

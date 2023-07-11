@@ -6,6 +6,19 @@ h1 {
     font-weight: 700;
 }
 
+p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.light-theme p {
+    color: var(--mono-400);
+}
+
+.night-theme p {
+    color: var(--mono-200);
+}
+
 .header {
     display: flex;
     align-items: top;

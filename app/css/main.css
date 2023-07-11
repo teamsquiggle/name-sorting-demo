@@ -12,7 +12,16 @@
     margin: 0;
     padding: 0;
     font-family: Spline Sans, Helvetica, sans-serif;
-    color: var(--night);
+}
+
+body.light-theme {
+    color: var(--mono-600);
+    background: var(--mono-100);
+}
+
+body.night-theme {
+    color: var(--mono-100);
+    background: var(--mono-600);
 }
 
 :root {
@@ -22,13 +31,49 @@
 
     /* Mono Colors */
     --mono-100: #FFFFFF;
-    --mono-200: #CDD7FC;
+    --mono-200: #E1E8ff;
     --mono-300: #A5B4EC;
     --mono-400: #6277C1;
     --mono-500: #3A4B89;
+    --mono-550: #2E3E76;
     --mono-600: #253364;
+    --mono-700: #141D40;
+    --mono-800: #0B112A;
 
     /* Typography */
     --type-normal: "Spline Sans", Helvetica, sans-serif;
     --type-mono: "Spline Sans Mono", Helvetica, sans-serif;
+}
+
+/* Name Sorting Demo */
+.name-container {
+    display: flex;
+    align-items: top;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 18px;
+    gap: 18px;
+}
+
+.name {
+    /* Appearance */
+    padding: 9px 18px;
+    border-radius: 9px;
+
+    /* Interaction */
+    cursor: pointer;
+    transition: opacity 200ms ease-in-out;
+}
+
+.name:hover {
+    opacity: 0.8;
+}
+
+.light-theme .name {
+    background: var(--mono-200);
+}
+
+.night-theme .name {
+    background: var(--mono-500);
 }

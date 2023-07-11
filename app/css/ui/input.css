@@ -6,7 +6,11 @@ input.text {
     /* Appearance */
     height: 36px;
     padding: 0 24px 0 16px;
+    background: transparent;
+
+    /* Border */
     border-radius: 18px;
+    box-sizing: border-box;
     border: 1px solid var(--mono-200);
     outline: none;
 
@@ -15,9 +19,31 @@ input.text {
     font-weight: 400;
 
     /* Interaction */
-    transition: border-color 400ms ease-in-out;
+    transition: border-color 200ms ease-in-out;
 }
 
-input.text::placeholder {
+.light-theme input.text {
+    color: var(--mono-600);
+    border: 1px solid var(--mono-300);
+}
+
+.light-theme input:focus.text {
+    border: 1px solid var(--mono-400);
+}
+
+.light-theme input.text::placeholder {
     color: var(--mono-300);
+}
+
+.night-theme input.text {
+    color: var(--mono-100);
+    border: 1px solid var(--mono-400);
+}
+
+.night-theme input:focus.text {
+    border: 1px solid var(--mono-300);
+}
+
+.night-theme input.text::placeholder {
+    color: var(--mono-400);
 }

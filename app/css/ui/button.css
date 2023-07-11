@@ -14,11 +14,11 @@ button {
 
     /* Interaction */
     cursor: pointer;
-    transition: opacity 400ms ease-in-out;
+    transition: opacity 200ms ease-in-out, color 200ms ease-in-out, background 200ms ease-in-out;
 }
 
-button:hover {
-    opacity: 0.6;
+button:not(:disabled):hover {
+    opacity: 0.8;
 }
 
 button * {
@@ -27,12 +27,38 @@ button * {
     vertical-align: middle;
 }
 
+button:disabled {
+    cursor: not-allowed;
+}
+
 button.primary {
+    color: var(--mono-600);
     background: var(--banana);
 }
 
-button.secondary {
-    background: var(--mono-300);
+button:disabled.primary {
+    opacity: 0.4;
+}
+
+.light-theme button.secondary {
+    color: var(--mono-600);
+    background: var(--mono-200);
+}
+
+.light-theme button:disabled.secondary {
+    color: var(--mono-300);
+    background: var(--mono-200);
+}
+
+.night-theme button.secondary {
+    color: var(--mono-200);
+    background: var(--mono-500);
+}
+
+.night-theme button:disabled.secondary {
+    color: var(--mono-400);
+    background: var(--mono-550);
+    cursor: not-allowed;
 }
 
 .buttons {
